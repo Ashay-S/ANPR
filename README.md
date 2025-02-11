@@ -1,10 +1,8 @@
 # Training Steps
 
-Steps required to train the **Detection** and **Recognition** models using PaddleOCR.
-
 ## Prerequisites
 
-Before you begin, ensure that you have the following installed:
+Ensure that you have the following installed:
 
 1. **PaddlePaddle**: The core deep learning framework used in PaddleOCR. Follow the installation instructions on the [PaddlePaddle website](https://www.paddlepaddle.org.cn/install/quick) for your system.
    
@@ -34,15 +32,10 @@ cd PaddleOCR
 
 ### 2. Create a Virtual Environment
 To avoid dependency issues, it is recommended to create a virtual environment:
-```bash
-python -m venv paddleocr_env
-paddleocr_env\Scripts\activate     # Windows
-source paddleocr_env/bin/activate  # Linux/MacOS
-```
+
 
 ### 3. Prepare Your Dataset
-Ensure your dataset follows the format specified here:  
-[PaddleOCR Dataset Format](https://paddlepaddle.github.io/PaddleOCR/main/en/datasets/ocr_datasets.html)
+Ensure your dataset follows the format specified here: [PaddleOCR Dataset Format](https://paddlepaddle.github.io/PaddleOCR/main/en/datasets/ocr_datasets.html)
 
 You can also use the dataset provided in [this Google Drive link](https://drive.google.com/drive/folders/1ANYjE6saMmWwSJBYo7p23_A0yhIHimfL?usp=drive_link).
 
@@ -74,7 +67,7 @@ python tools/train.py -c configs/rec/rec_icdar15.yml
 - Recommended Versions of a few libraries:
   - paddleocr 2.5
   - paddlepaddle-gpu 2.5.0
-  - CUDA 11.4 or above (preferred 11.8)
+  - CUDA 11.4 or above (I used 11.8)
 - You an find all the pre trained models [here](https://paddleclas-en.readthedocs.io/en/latest/models/models_intro_en.html).
 
 ---
